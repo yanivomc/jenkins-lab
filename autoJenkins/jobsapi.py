@@ -20,5 +20,10 @@ while x == "None":
     x = str(x)
     if x != "None":
         print ("Job Status is:" , x)
+        print "***** Printing Jenkins console output *****"
+        time.sleep(2.5)
+        print j.console_text(job, build_number='lastBuild')
     else:
         pass
+
+
